@@ -103,6 +103,7 @@ local separators = lain.util.separators
 
 -- Clock
 local mytextclock = wibox.widget.textclock(markup("#FEFEFE", "%A %d %B") .. markup("#FEFEFE", " - ") .. markup("#FEFEFE", "%H:%M:%S"), 1)
+mytextclock.font = theme.font
 
 -- Binary clock
 local binclock = require("themes.powerarrow.binclock"){
