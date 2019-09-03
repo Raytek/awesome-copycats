@@ -119,7 +119,7 @@ theme.cal = lain.widget.cal({
     --cal = "cal --color=always",
     attach_to = { mytextclock },
     notification_preset = {
-        font = "xos4 Terminus 10",
+        font = "Terminus 10",
         fg   = theme.fg_normal,
         bg   = theme.bg_normal
     }
@@ -161,7 +161,7 @@ theme.mail = lain.widget.imap({
 -- ALSA volume
 theme.volume = lain.widget.alsabar({
     --togglechannel = "IEC958,3",
-    notification_preset = { font = "xos4 Terminus 10", fg = theme.fg_normal },
+    notification_preset = { font = "Terminus 10", fg = theme.fg_normal },
 })
 
 -- MPD
@@ -237,7 +237,7 @@ local tempicon = wibox.widget.imagebox(theme.widget_temp)
 local fsicon = wibox.widget.imagebox(theme.widget_hdd)
 --[[ commented because it needs Gio/Glib >= 2.54
 theme.fs = lain.widget.fs({
-    notification_preset = { fg = theme.fg_normal, bg = theme.bg_normal, font = "xos4 Terminus 10" },
+    notification_preset = { fg = theme.fg_normal, bg = theme.bg_normal, font = "Terminus 10" },
     settings = function()
         local fsp = string.format(" %3.2f %s ", fs_now["/"].free, fs_now["/"].units)
         widget:set_markup(markup.font(theme.font, fsp))
